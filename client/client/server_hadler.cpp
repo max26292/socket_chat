@@ -16,7 +16,10 @@ void server_hadler::recveive_question()
 			int count = 0;
 			int len = clients[i].Receive(recv, 500, 0);
 			recv[len] = 0;
-			if (strcmp(recv, "loop") == 0) { loop = true; }
+			if (strcmp(recv, "loop") == 0) 
+			{
+				loop = true;
+			}
 			if (strcmp(recv, "answer") == 0)
 			{
 				do

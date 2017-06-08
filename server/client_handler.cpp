@@ -13,7 +13,13 @@ int client_handler::switchturn()
 int client_handler::theunchosen()
 {
 	int unchosen = -1;
-	for (int i = 0; i < nclient; i++) { if (score[i] == 0) { return i; } }
+	for (int i = 0; i < nclient; i++)
+	{ 
+		if (score[i] == 0) 
+		{ 
+			return i; 
+		} 
+	}
 	return unchosen;
 }
 
